@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding-top: 60px;
+            padding-left: 78px;
+        }
+        .header {
+            height: 55px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            
+            background-color: white;
+            border-bottom: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: #cccccc;
+
+        }
+        .right-section {
+            margin-left: 80px;
+            width: 200px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .profile-picture {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+            object-position: center;
+            cursor: pointer;
+        }
+        .profile-name {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .left-section {
+            margin-right: 50px;
+            width: 280px;
+
+        }
+        .add-friend, .message {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 16px;
+            padding-left: 16px;
+
+            border: none;
+            border-radius: 2px;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+        .add-friend {
+            background-color: rgb(75, 115, 248);
+            color: white;
+        }
+        .message {
+            background-color: #cccccc;
+            color: black;
+        }
+        .sidebar {
+            position: fixed;
+            top: 55px;
+            bottom: 0;
+            left: 0;
+            width: 78px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            background-color: rgb(37, 37, 37);
+        }
+        .image1, .image2, .image3 {
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+            object-fit: cover;
+            object-position: center;
+            margin-top: 10px;
+        }
+
+        .double-sidebar {
+            position: fixed;
+            top: 55px;
+            bottom: 0;
+            left: 78px;
+            width: 150px;;
+
+            background-color: rgb(65, 64, 64);
+            color: white;
+        }
+        .double-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .double-content {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .video-grid {
+            display: inline-block;
+            background-color: #cccccc;
+            width: 300px;
+            height: 300px;
+            margin-left: 200px;
+
+            position: relative;
+        }
+        .close-button {
+            background-color: black;
+            color: white;
+            padding-top: 3px;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-bottom: 3px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .timer {
+            background-color: black;
+            color: white;
+            padding: 6px;
+
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+        }
+        .image-cloth {
+            width: 100%;
+        }
+        .timer-cloth {
+            background-color: black;
+            color: white;
+            padding: 8px;
+
+            position: absolute;
+            top: 10px;
+            right: 0;
+        }
+        .button-container {
+            background-color: transparent;
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 100px;
+            opacity: 0.6;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .add {
+            background-color: transparent;
+            border: 1px;
+            border-style: solid;
+            border-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            padding: 8px;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="right-section">
+            <img class="profile-picture" src="manja-vitolic-gKXKBY-C-Dk-unsplash.jpeg">
+            <p class="profile-name">Oliver Cat</p>
+        </div>
+        <div class="left-section">
+            <button class="add-friend">Add Friend</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <img class="image1" src="manja-vitolic-gKXKBY-C-Dk-unsplash.jpeg">
+        <img class="image2" src="michael-sum-LEpfefQf4rU-unsplash.jpeg">
+        <img class="image3" src="raoul-droog-yMSecCHsIBc-unsplash.jpeg">
+    </div>
+    <div class="double-sidebar">
+        <div class="double-head">
+            <p>INFO</p>
+            <p>+</p>
+        </div>
+        <div class="double-content">
+            <p># new-videos</p>
+            <p># updates</p>
+            <p># faq</p>
+        </div>
+    </div>
+
+    <div class="video-grid">
+        <button class="close-button">X</button>
+        <div class="timer">0:29</div>
+    </div>
+
+    <div class="video-grid">
+        <img class="image-cloth" src="raoul-droog-yMSecCHsIBc-unsplash.jpeg" alt="">
+        <div class="timer-cloth">20% OFF</div>
+        <div class="button-container">
+            <button class="add">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

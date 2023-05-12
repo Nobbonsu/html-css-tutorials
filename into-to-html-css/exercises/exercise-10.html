@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex for Header</title>
+
+    <style>
+        p{
+            margin: 0;
+        }
+        .header {
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        .home {
+            flex: 1;
+        }
+        .home-para {
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+        }
+        .search {
+            flex: 3;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .search-bar {
+            width: 98%;
+            font-family: Arial;
+            font-size: 18px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 10px;
+            border: none;
+            border-radius: 40px;
+        }
+
+        .button {
+            flex: 1;
+        }
+        button {
+            background-color: blueviolet;
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-family: Arial;
+            font-size: 18px;
+            border: 1px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="home">
+            <p class="home-para">Home</p>
+        </div>
+        <div class="search">
+            <input class="search-bar" type="text" placeholder="Search">
+        </div>
+        <div class="button">
+            <button>
+                Download
+            </button>
+        </div>
+    </div>
+</body>
+</html>

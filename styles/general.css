@@ -1,0 +1,41 @@
+p {
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    background-color: #eeeeee;
+}
+
+.footer {
+    height: 200px;
+}
+
+@media (max-width: 1200px) {
+    main {
+        margin: 0;
+        padding-top: 80px;
+        padding-left: 96px;
+        padding-right: 24px;
+        padding-bottom: 40px;
+        background-color: #eeeeee;
+    }
+    
+}
+
+@media (min-width: 1200.1px) {
+    main {
+        margin: 0;
+        padding-top: 80px;
+        padding-left: 215px;
+        padding-right: 24px;
+        padding-bottom: 40px;
+        background-color: #eeeeee;
+    }
+}
